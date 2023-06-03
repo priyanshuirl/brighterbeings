@@ -1,0 +1,204 @@
+/*--
+/*  17 - Admission CSS
+/*----------------------------------------*/
+
+
+.upstudy-admission-section {
+
+    & .admission-left {
+
+        & .single-admission {
+
+            & .admission-content {
+                background: #1d3f6b;
+                height: 320px;
+                padding: 40px 45px 45px 35px;
+
+                &.color-2 {
+                    background: #dc3545;
+                }
+
+                & i {
+                    font-size: 40px;
+                    color: $white;
+                }
+
+                & .title {
+                    font-size: 24px;
+                    line-height: 34px;
+                    font-weight: 600;
+                    color: $white;
+                    margin-top: 5px;
+                }
+
+                & p {
+                    font-size: 16px;
+                    line-height: 30px;
+                    font-weight: 400;
+                    color: $white;
+                    margin-top: 8px;
+                }
+
+                & .learn-more {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: $white;
+                    margin-top: 15px;
+
+                    & i {
+                        font-size: 18px;
+                        position: relative;
+                        top: 1px;
+                        margin-left: 5px;
+                        transition: $transition-default;
+                    }
+
+                    &:hover {
+                        
+                        & i {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+
+            & .admission-img {
+
+                & img {
+                    height: 320px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    & .admission-right {
+
+        & .admission-banner {
+            position: relative;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            padding-top: 160px;
+            padding-bottom: 205px;
+            padding-left: 110px;
+            padding-right: 130px;
+            height: 640px;
+            z-index: 1;
+
+            &::before {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                background: rgba(#1d3f6b, 0.45);
+                z-index: -1;
+            }
+
+            & .title {
+                font-size: 42px;
+                line-height: 52px;
+                font-family: $heading-font3;
+                font-weight: 800;
+                color: $white;
+            }
+
+            & .btn {
+                height: 60px;
+                line-height: 58px;
+                padding: 0 50px;
+                margin-top: 45px;
+                background: $white;
+                color: #2f2a55;
+
+                & i {
+                    position: relative;
+                    top: 1px;
+                    left: 8px;
+                    transition: $transition-default;
+                }
+
+                &:hover {
+                    background: #dc3545;
+                    color: $white;
+
+                    & i {
+                        left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.upstudy-admission-section {
+    @media #{$tablet-device} {
+        & .admission-right {
+
+            & .admission-banner {
+                height: 550px;
+            }
+        }
+    }
+    @media #{$large-mobile} {
+        & .admission-right {
+
+            & .admission-banner {
+                height: 490px;
+                padding-top: 110px;
+                padding-bottom: 100px;
+                padding-left: 80px;
+                padding-right: 60px;
+
+                & .title {
+                    font-size: 35px;
+                    line-height: 45px;
+                }
+            }
+        }
+    }
+    @media #{$small-mobile} {
+        & .admission-right {
+
+            & .admission-banner {
+
+                padding-left: 50px;
+                padding-right: 40px;
+
+            }
+        }
+    }
+    @media #{$extra-small-mobile} {
+        & .admission-left {
+
+            & .single-admission {
+    
+                & .admission-content {
+                    height: auto;
+                    padding: 40px 30px 45px 35px;
+                }
+            }
+        }
+        & .admission-right {
+
+            & .admission-banner {
+                padding-top: 70px;
+                padding-bottom: 80px;
+                padding-left: 30px;
+                padding-right: 30px;
+
+                & .title {
+                    font-size: 32px;
+                    line-height: 42px;
+                }
+
+                & .btn {
+                    padding: 0 30px;
+
+                }
+            }
+        }
+    }
+}

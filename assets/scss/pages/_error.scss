@@ -1,0 +1,93 @@
+/*--
+/*  27 - Error CSS
+/*----------------------------------------*/
+
+
+// Error Wrapper
+.error-wrapper {
+    margin-top: 30px;
+}
+
+// Error Item
+.error-item {
+
+    & .error-thumb {
+
+        & img {
+            max-height: 301px;
+        }
+    }
+
+    & .error-content {
+
+        & .title {
+            font-size: 36px;
+            line-height: 46px;
+            font-weight: 700;
+            color: $heading-color1;
+            margin-top: 43px;
+        }
+
+        & p {
+            font-size: 18px;
+            line-height: 30px;
+            color: #415674;
+            margin-top: 11px;
+            margin-bottom: 41px;
+        }
+
+        & .error-form {
+
+            & .search-form {
+                position: relative;
+                max-width: 460px;
+                margin: 0 auto;
+        
+                & input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not([type="file"]) {
+                    width: 100%;
+                    max-width: 460px;
+                    height: 50px;
+                    margin-bottom: 0;
+                    border: 1px solid #d6d5d7;
+                    color: #415674;
+                    font-weight: 700;
+                    outline: none;
+                    overflow: hidden;
+                }
+        
+                & button {
+                    position: absolute;
+                    right: 0px;
+                    width: 50px;
+                    height: 50px;
+                    line-height: 52px;
+                    border-radius: 5px;
+                    background: transparent;
+                    color: #1b2336;
+                    border: 0;
+                    top: 50%;
+                    font-size: 16px;
+                    font-weight: 700;
+                    transform: translateY(-50%);
+                    transition: $transition-default;
+        
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+
+        & .btn {
+            height: 50px;
+            line-height: 52px;
+            font-size: 14px;
+            font-weight: 700;
+            font-family: $heading-font;
+            margin-top: 20px;
+        }
+    }
+}
+
+
+

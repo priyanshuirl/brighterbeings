@@ -1,0 +1,90 @@
+/*--
+/*  04 - Language CSS
+/*----------------------------------------*/
+
+// Language Section
+
+
+// Language Wrapper
+.language-wrapper {
+    margin-top: -50px;
+    position: relative;
+    z-index: 5;
+    @media #{$small-mobile} {
+        overflow: hidden;
+    }
+
+
+    & .language-item {
+        display: flex;
+        align-items: center;
+        background: $white;
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.21);
+        border-radius: 10px;
+        padding: 20px 35px;
+        margin: 15px 0px;
+
+        & img {
+            transition: $transition-default;
+            border-radius: 50%;
+        }
+
+        & .title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #1e1e1e;
+            margin-left: 20px;
+            transition: $transition-default;
+        }
+
+        &:hover {
+           
+            & .title {
+                color: #f6520a;
+            }
+        }
+    }
+}
+
+
+.language-active {
+
+   & .language-arrow  {
+        transform: translateY(-25%);
+        color: #1e1e1e;
+        transition: $transition-default;
+        &.swiper-button-prev {
+            left:-45px;
+            @media #{$desktop-device} {
+                left: -30px;
+            }
+            @media #{$small-mobile} {
+                left: 0px;
+            }
+            &::after {
+                content: "\f16d";
+                font-family: flaticon !important;
+                font-size: 35px;
+            }
+        }
+        &.swiper-button-next {
+            right:-45px;
+            @media #{$desktop-device} {
+                right: -30px;
+            }
+            @media #{$small-mobile} {
+                right: 0px;
+            }
+            &::after {
+                content: "\f16e";
+                font-family: flaticon !important;
+                font-size: 35px;
+            }
+        }
+        &:hover {
+            color: #f6520a;
+        }
+    }
+}
+
+ 

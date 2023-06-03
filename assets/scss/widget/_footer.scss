@@ -1,0 +1,298 @@
+/*--
+/*  31.1 - Footer Widget CSS
+/*----------------------------------------*/
+
+// Footer Widget Area
+.footer-widget-wrap {
+    padding-top: 50px;
+    padding-bottom: 90px;
+    @media #{$large-mobile}{
+        padding-top: 20px;
+    }
+}
+
+
+
+// Footer Widget
+.footer-widget {
+    margin-top: 40px;
+}
+
+// Footer Logo 
+.footer-logo{}
+
+// Widget Info
+.footer-widget-title{
+    font-size: 18px;
+    font-family: $heading-font;
+    font-weight: 500;
+    color: $white;
+}
+
+
+// Widget Info
+.widget-about{
+    
+    & .text{
+        font-size: 14px;
+        font-family: $heading-font;
+        font-weight: 400;
+        line-height: 24px;
+        color: $white;
+        padding-right: 10px;
+        margin-top: 15px;
+        @media #{$desktop-device}{
+            padding-right: 0;
+        }
+    }
+}
+
+
+// Widget Link
+.widget-link{
+    padding-top: 15px;
+
+    & .link{
+        & li{
+            margin-top: 10px;
+
+            & a{
+                font-size: 14px;
+                color: #cacaca;
+                transition: $transition-default;
+             
+                &:hover {  
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+
+
+.widget-download {
+    padding-top: 17px;
+    & a {
+        display: block;
+        margin-top: 15px;
+
+        & img {
+            border-radius: 4px;
+        }
+    }
+}
+
+// Widget Info
+.widget-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    border-top: 1px solid #29313a;
+    margin-right: 35px;
+    margin-top: 20px;
+    padding-top: 20px;
+
+    & .info-icon {
+    
+        & i {
+            font-size: 25px;
+            display: inline-block;
+            color: $primary;
+            margin-right: 10px;
+            margin-top: 2px;
+        }
+    }
+
+    &.widget-info-2 {
+
+        & .info-icon {
+    
+            & i {
+                color: #f6520a;
+            }
+        }
+    }
+
+    &.widget-info-3 {
+
+        & .info-icon {
+    
+            & i {
+                color: #dc3545;
+            }
+        }
+    }
+
+    & .info-text {
+        font-size: 16px;
+        line-height: 22px;
+        font-family: $heading-font;
+        font-weight: 500;
+        color: $white;
+
+        & a {
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+}
+
+
+// Home Style Four
+
+.footer-section-02 {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    & .shape-1 {
+        position: absolute;
+        top: -35%;
+        left: 0;
+        width: 100%;
+        @media #{$desktop-device} {
+            top: -16%;
+        }
+        @media #{$tablet-device} {
+            top: -8%;
+        }
+        @media #{$large-mobile} {
+            top: -3%;
+        }
+        @media #{$small-mobile} {
+            top: 0%;
+        }
+    }
+
+    & .shape-2 {
+        position: absolute;
+        left: 25px;
+        top: 130px;
+        z-index: -1;
+    }
+
+    & .shape-3 {
+        position: absolute;
+        top: 120px;
+        right: -95px;
+        z-index: -1;
+    }
+
+    & .footer-widget-wrap {
+        padding-top: 90px;
+    }
+    & .footer-widget-title{
+        color: $black;
+    }
+
+    & .widget-about{
+    
+        & .text{
+            color: #7a7a7a;
+        }
+    }
+
+    & .widget-link{
+    
+        & .link{
+            & li{
+    
+                & a{
+                    color: #7a7a7a;
+                 
+                    &:hover {  
+                        color: #ff5562;
+                    }
+                }
+            }
+        }
+    }
+
+    & .widget-info {
+        border-top: 0;
+    
+        & .info-icon {
+        
+            & i {
+                color: #ff5562;
+            }
+        }
+    
+        & .info-text {
+            color: $black;
+    
+            & a {
+                &:hover {
+                    color: #ff5562;
+                }
+            }
+        }
+    }
+
+    & .widget-download {
+        & a {
+    
+            & img {
+                width: 130px;
+                height: 40px;
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+.footer-section-02 {
+    @media #{$desktop-device} {
+        & .shape-2 {
+            left: 190px;
+            top: 75px;
+        }
+    }
+    @media #{$large-mobile} {
+        & .shape-3 {
+            width: 370px;
+            top: 250px;
+            right: -120px;
+        }
+    }
+    @media #{$small-mobile} {
+        & .shape-3 {
+            top: 380px;
+            right: -110px;
+        }
+    }
+}
+
+// Back Button 
+.back-btn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    line-height: 50px;
+    z-index: 20;
+    border-radius: 50%;
+    background-color: $primary;
+    border: 0;
+    transition: $transition-default;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    opacity: 0;
+    transform: translateX(130%) rotate(90deg);
+
+    
+
+    &:hover{
+        background-color: $secondary;
+        color: $white;
+    }
+
+    &.active {
+        opacity: 1;
+        transform: translateY(0) rotate(90deg);
+    }
+}

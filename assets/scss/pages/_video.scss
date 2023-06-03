@@ -1,0 +1,138 @@
+/*--
+/*  14 - Video CSS
+/*----------------------------------------*/
+
+.upstudy-video-section {
+
+    & .video-wrap {
+        margin-bottom: -370px;
+        position: relative;
+        z-index: 5;
+
+        & .shape-1 {
+            position: absolute;
+            top: 15%;
+            left: 5%;
+            z-index: -1;
+        }
+        & .shape-2 {
+            width: 225px;
+            position: absolute;
+            top: 17%;
+            right: 7%;
+            z-index: -1;
+        }
+    }
+}
+
+.upstudy-video-section {
+    @media #{$tablet-device}  {
+        & .video-wrap {
+            margin-bottom: -275px;
+        }
+    }
+    @media #{$large-mobile} {
+
+        & .video-wrap {
+            margin-bottom: -200px;
+            & .shape-1 {
+                width: 220px;
+                left: 0%;
+            }
+    
+            & .shape-2 {
+                width: 180px;
+                right: 0%;
+            }
+        }
+    }
+    @media #{$extra-small-mobile} {
+
+        & .video-wrap {
+            margin-bottom: -110px;
+            & .shape-1 {
+                display: none;
+            }
+    
+            & .shape-2 {
+                display: none;
+            }
+        }
+    }
+    
+}
+
+.video-img {
+    position: relative;
+
+    & .play-btn {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -65%);
+
+        & a {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            line-height: 100px;
+            text-align: center;
+            font-size: 14px;
+            color: $white;
+            background: $primary;
+            border-radius: 50%;
+            position: relative;
+
+            &::before {
+                content: "";
+                border: 1px solid #ffffff;
+                position: absolute;
+                z-index: 0;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                display: block;
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+            }
+
+            &:hover {
+                background: #111a24;
+            }
+        }
+    }
+}
+
+.video-img {
+    @media #{$large-mobile} {
+        & .play-btn {
+    
+            & a {
+                width: 80px;
+                height: 80px;
+                line-height: 80px;
+    
+                &::before {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+    }
+}
+
+// About Page Style
+
+.upstudy-video-section-02 {
+
+    & .video-wrap {
+
+        & .shape-1 {
+            left: 0;
+        }
+        & .shape-2 {
+            right: 3%;
+        }
+    }
+}

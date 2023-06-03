@@ -1,0 +1,129 @@
+/*--
+/*  30 - Contact CSS
+/*----------------------------------------*/
+
+// Contact Info Wrap
+
+.contact-info-wrap {
+
+    & .info-title {
+        font-size: 42px;
+        font-weight: 600;
+        color: $heading-color;
+        @media #{$large-mobile} {
+            font-size: 35px;
+        }
+    }
+    
+    & .single-contact-info {
+        display: flex;
+        margin-top: 40px;
+
+        &  .info-icon {
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+                border-radius: 50%;
+                text-align: center;
+                background: #d2efea;
+                color: $primary;
+
+            & i {
+                font-size: 25px;  
+            }
+        }
+
+        & .info-content {
+            flex: 1;
+            margin-left: 15px;
+
+            & .title {
+                font-size: 18px;
+                line-height: 30px;
+                font-weight: 400;
+                color: #333333;
+            }
+
+            & p {
+                font-size: 18px;
+                line-height: 30px;
+                font-weight: 700;
+                color: $heading-color;
+            }
+        }
+    }
+}
+
+
+// Contact Form Section
+
+.contact-form-wrap {
+    @media #{$tablet-device} {
+        padding-top: 30px;
+    }
+    
+    & .single-form {
+        margin-top: 20px;
+        & input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not([type="file"]) {
+            border: 1px solid #e1e1e1;
+            height: 55px;
+            padding: 10px 25px;
+            color: #415674;
+            border-radius: 0;
+            @include placeholder{
+                opacity: 0.95;
+                font-size: 14px;
+                color: #787884;
+                font-weight: 400;
+            }
+            &:focus{
+                outline: none;
+                box-shadow: none;
+                border-color: $primary;
+            }
+        }
+        & textarea {
+            height: 135px;
+            color: #415674;
+            padding: 10px 25px;
+            padding-top: 15px;
+            border-radius: 0;
+            resize: none;
+            @include placeholder{
+                opacity: 0.95;
+                font-size: 14px;
+                color: #787884;
+                font-weight: 400;
+            }
+            &:focus{
+                outline: none;
+                box-shadow: none;
+                border-color: $primary;
+            }
+        }
+    }
+    & .form-btn {
+
+        & .btn {
+            margin-top: 35px;
+        }
+    }
+}
+
+// Contact Map
+.contact-map-section {
+
+    & .contact-map-wrap {
+        margin-bottom: -10px;
+    
+        & iframe {
+            height: 550px;
+            width: 100%;
+            filter: brightness( 100% ) contrast( 100% ) saturate( 0% ) blur( 0px ) hue-rotate( 0deg );
+            @media #{$desktop-device} {
+                height: 450px;
+            }
+        }
+    }
+}
+  

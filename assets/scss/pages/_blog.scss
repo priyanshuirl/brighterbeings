@@ -1,0 +1,509 @@
+/*--
+/*  10 - Blog CSS
+/*----------------------------------------*/
+
+.upstudy-blog-section {
+
+    & .blog-wrap {
+        margin-top: -30px;
+    }
+    & .section-title{
+        & .title{
+    
+            & span {
+    
+                &::before {
+                    bottom: -15px;
+                    background-image: url(../images/shape/text-shape3.png);
+                }
+            }
+        }
+    }
+}
+
+.blog-content-wrap {
+    padding-top: 40px;
+}
+
+.single-blog {
+    margin-top: 30px;
+
+    & .blog-img {
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    & .blog-content {
+        padding-top: 35px;
+        padding-left: 45px;
+        padding-right: 45px;
+        @media #{$desktop-device} {
+            padding-left: 0;
+            padding-right: 0;
+        } 
+
+        & .blog-meta {
+
+            & span {
+                font-size: 13px;
+                font-weight: 400;
+                color: #9a9a9a;
+                margin-right: 20px;
+
+                & i {
+                    margin-right: 3px;
+                }
+            }
+        }
+
+        & .title {
+            font-size: 24px;
+            line-height: 36px;
+            font-weight: 600;
+            color: $heading-color;
+            @media #{$large-mobile} {
+                font-size: 20px;
+                line-height: 32px; 
+            }
+        }
+
+        & .blog-btn {
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $primary;
+            position: relative;
+            margin-top: 10px;
+
+            &::before {
+                position: absolute;
+                left: 0;
+                bottom: 1px;
+                height: 1px;
+                width: 100%;
+                content: "";
+                transform: scale(1);
+                background: $primary;
+                transition: $transition-default;
+            }
+
+            &:hover {
+                &::before {
+                    transform: scale(-1);
+                }
+            }
+        }
+    }
+
+    &:hover {
+        & .blog-img {
+
+            & a {
+    
+                & img {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}
+
+// Home Style Four
+.upstudy-blog-section-02 {
+    & .single-blog {
+
+        & .blog-content {
+    
+    
+            & .title {
+                color: #12283b;
+
+                &:hover {
+
+                    & a {
+                        color: #ff5562;
+                    }
+                }
+            }
+    
+            & .blog-btn {
+                color: #ff5562;
+    
+                &::before {
+                    background: #ff5562;
+                }
+    
+                &:hover {
+                    color: $secondary;
+                    &::before {
+                        background: $secondary;
+                        transform: scale(-1);
+                    }
+                }
+            }
+        }
+    
+        &:hover {
+            & .blog-img {
+    
+                & a {
+        
+                    & img {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Home Style Five
+
+.upstudy-blog-section-03 {
+
+    & .blog-content-wrap {
+        padding-top: 30px;
+    }
+}
+
+.single-blog-02 {
+    background: #fff9eb;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 30px;
+
+    & .blog-img {
+        overflow: hidden;
+        & a {
+            display: block;
+            & img {
+                transition: $transition-default;
+            }
+        }
+    }
+    & .blog-content {
+        padding: 0 30px 50px;
+        margin-top: -15px;
+
+        & .meta {
+
+            & .date {
+                height: 30px;
+                width: 130px;
+                line-height: 30px;
+                background: #f6520a;
+                border-radius: 35px;
+                font-size: 14px;
+                font-weight: 500;
+                color: $white;
+                position: relative;
+                z-index: 1;
+                padding: 0 25px;
+                margin-bottom: 20px;
+            }
+
+            & .blog-meta {
+                font-size: 14px;
+                font-weight: 600;
+                color: #f6520a;
+                position: relative;
+                margin-right: 25px;
+
+                &::before {
+                    content: "";
+                    width: 3px;
+                    height: 3px;
+                    border-radius: 50%;
+                    background: #f6520a;
+                    position: absolute;
+                    left: -14px;
+                    top: 8px;
+                }
+
+                &.blog-meta-1 {
+                    color: #6e6e6e;
+                    &::before {
+                        display: none;
+                    }
+                }
+                
+            }
+        }
+        & .title {
+            font-size: 24px;
+            line-height: 36px;
+            font-weight: 600;
+            color: #1e1e1e;
+            margin-top: 5px;
+
+            &:hover {
+
+                & a {
+                    color: #f6520a;
+                }
+            }
+        }
+        & .text {
+            font-size: 16px;
+            line-height: 30px;
+            color: #666666;
+            margin-top: 10px;
+        }
+    }
+
+    &:hover {
+        & .blog-img {
+
+            & a {
+
+                & img {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}
+
+// Home Style Six
+
+.single-blog-03 {
+    margin-top: 40px;
+      
+    & .blog-img{
+        overflow: hidden;
+        position: relative;
+
+        & a{
+            display: block;
+        }
+
+        & .top-meta {
+            position: absolute;
+            top: 25px;
+            left: 30px;
+
+            & .tag {
+                font-size: 14px;
+                font-weight: 700;
+                border-radius: 3px;
+                text-transform: uppercase;
+                padding: 0 25px;
+                height: 30px;
+                line-height: 30px;
+                display: inline-block;
+                color: $white;
+                background: #dc3545;
+                white-space: nowrap;
+            }
+        }
+    }
+    & .blog-content {
+        padding-top: 10px;
+        padding-right: 45px;
+        @media #{$desktop-device} {
+            padding-right: 0;
+        }
+
+        & .blog-meta {
+
+            & span {
+                font-size: 13px;
+                font-weight: 400;
+                color: #9a9a9a;
+                margin-right: 20px;
+
+                & i {
+                    color: $black;
+                    margin-right: 3px;
+                }
+            }
+        }
+
+        & .title {
+            font-size: 22px;
+            line-height: 32px;
+            font-family: $heading-font3;
+            font-weight: 800;
+            color: $black;
+            margin-top: 5px;
+            @media #{$large-mobile} {
+                font-size: 20px;
+                line-height: 32px; 
+            }
+
+            &:hover {
+
+                & a {
+                    color: $primary-2;
+                }
+            }
+        }
+    }
+
+    &:hover {
+        & .blog-img {
+
+            & a {
+
+                & img {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}
+
+
+.upstudy-blog-event-section {
+    
+
+    & .section-title {
+
+        & .title {
+            font-family: $heading-font3;
+            font-weight: 800;
+            color: $black;
+        }
+    }
+
+    & .blog-event-content-wrap {
+        padding-top: 15px;
+    }
+}
+.event-item {
+    padding: 0 5px;
+    position: relative;
+    margin-top: 40px;
+    @media #{$tablet-device} {
+        padding: 0 0;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #ebebeb;
+        width: 1px;
+        height: 100%;
+        transform: translateX(-10px);
+        @media #{$tablet-device} {
+            display: none;
+        }
+
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: #ebebeb;
+        width: 1px;
+        height: 100%;
+        transform: translateX(10px);
+        @media #{$tablet-device} {
+            display: none;
+        }
+    }
+      
+    & .event-img{
+        overflow: hidden;
+        position: relative;
+
+        & a{
+            display: block;
+        }
+
+        & .top-meta {
+            position: absolute;
+            top: 25px;
+            left: 30px;
+
+            & .tag {
+                font-size: 14px;
+                font-weight: 700;
+                border-radius: 3px;
+                text-transform: uppercase;
+                padding: 0 25px;
+                height: 30px;
+                line-height: 30px;
+                display: inline-block;
+                color: $white;
+                background: #dc3545;
+                white-space: nowrap;
+            }
+        }
+    }
+    & .event-content {
+        margin-top: 25px;
+        padding: 0 140px;
+        @media #{$desktop-device} {
+            padding: 0 0;
+        }
+
+        & .meta {
+            font-size: 14px;
+            font-weight: 400;
+            color: #9a9a9a;
+            margin-right: 20px;
+
+            & i {
+                color: $black;
+                margin-right: 3px;
+            }
+        }
+
+        & .title {
+            font-size: 24px;
+            line-height: 36px;
+            font-family: $heading-font3;
+            font-weight: 800;
+            color: $black;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            @media #{$large-mobile} {
+                font-size: 20px;
+                line-height: 32px; 
+            }
+
+            &:hover {
+
+                & a {
+                    color: $primary-2;
+                }
+            }
+        }
+
+        & .btn {
+            height: 45px;
+            line-height: 42px;
+            border: 1px solid #ebebeb;
+            border-radius: 4px;
+            background: transparent;
+            padding: 0 80px;
+            color: $primary-2;
+            margin-top: 30px;
+
+            &:hover {
+                background: $primary-2;
+                border: 1px solid $primary-2;
+                color: $white;
+            }
+        }
+    }
+
+    &:hover {
+        & .event-img {
+
+            & a {
+
+                & img {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}
+
+ 

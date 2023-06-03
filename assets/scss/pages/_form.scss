@@ -1,0 +1,227 @@
+/*--
+/*  15 - Form CSS
+/*----------------------------------------*/
+
+
+.upstudy-form-section {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    padding-top: 160px;
+    padding-bottom: 135px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+
+    & .form-content-wrap {
+        position: relative;
+        z-index: 1;
+
+        & .shape-1 {
+            position: absolute;
+            right: -70px;
+            top: -40px;
+            z-index: -1;
+        }
+    }
+    & .form-content {
+        text-align: center;
+        max-width: 390px;
+        margin-left: auto;
+        padding-top: 10px;
+
+        & .quote-svg {
+
+            & svg {
+                fill: $white;
+            }
+        }
+
+        & .text {
+            font-size: 24px;
+            line-height: 36px;
+            font-weight: 500;
+            color: $white;
+            margin-top: 10px;
+        }
+        & .name {
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 500;
+            color: #f6520a;
+            margin-top: 20px;
+        }
+        & .designation {
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 400;
+            color: $white;
+        }
+
+    }
+
+    & .course-form {
+        background: #f6520a;
+        max-width: 410px;
+        padding: 60px 25px 80px;
+        margin-left: auto;
+        position: relative;
+        z-index: 1;
+        & .course-form-inner {
+
+            & .title {
+                font-size: 30px;
+                line-height: 36px;
+                padding: 0 30px;
+                color: $white;
+                padding-bottom: 25px;
+            }
+
+            & .single-form {
+                margin-top: 20px;
+                & .nice-select {
+                    width: 100%;
+                    height: 60px;
+                    line-height: 58px;
+                    background: #dd4a09;
+                    color: $white;
+                    border: 0;
+                    padding: 0 20px;
+                    font-size: 14px;
+                    border-radius: 5px;
+
+                    &::after {
+                        border-bottom: 2px solid $white;
+                        border-right: 2px solid $white;
+                    }
+
+                    & .list {
+                        width: 100%;
+
+                        & .option {
+                            color: #1e1e1e;
+                        }
+                    }
+                }
+
+                & input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not([type="file"]) {
+                    height: 60px;
+                    line-height: 58px;
+                    background: #dd4a09;
+                    color: $white;
+                    font-weight: 400;
+                    border: 0;
+                    padding: 0 20px;
+                    font-size: 14px;
+                    border-radius: 5px;
+
+                    @include placeholder{
+                        opacity: 0.95;
+                        font-size: 14px;
+                        color: $white;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            & .form-btn {
+                margin-top: 30px;
+                & .btn {
+                    width: 100%;
+                    height: 50px;
+                    line-height: 48px;
+                    border-radius: 35px;
+                    font-size: 16px;
+                    background: $white;
+                    color: #1e1e1e;
+
+                    &:hover {
+                        background: #ffa300;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.upstudy-form-section {
+    @media #{$desktop-device} {
+        & .form-content-wrap {
+    
+            & .shape-1 {
+                right: 0px;
+            }
+        }
+        & .form-content  {
+            margin: 0 auto;
+        }
+        & .course-form {
+
+            & .course-form-inner {
+    
+                & .title {
+                    padding: 0 0px;
+                }
+            }
+        }
+    }
+    @media #{$tablet-device} {
+        padding-top: 140px;
+        padding-bottom: 110px;
+        & .form-content-wrap {
+    
+            & .shape-1 {
+                right: 85px;
+            }
+        }
+        & .course-form {
+            margin: 0 auto;
+            margin-top: 190px;
+        }
+    }
+    @media #{$large-mobile} {
+        padding-top: 140px;
+        padding-bottom: 110px;
+        & .form-content-wrap {
+    
+            & .shape-1 {
+                right: 0px;
+            }
+        }
+        & .course-form {
+            margin: 0 auto;
+            margin-top: 190px;
+        }
+    }
+    @media #{$small-mobile} {
+        padding-top: 40px;
+        padding-bottom: 100px;
+
+        & .form-content-wrap {
+            background: #ffa300;
+            clip-path: ellipse(50% 34% at 50% 50%);
+            padding: 90px 20px;
+    
+            & .shape-1 {
+                display: none;
+            }
+        }
+        & .course-form {
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+    }
+    @media #{$extra-small-mobile} {
+        & .course-form {
+
+            & .course-form-inner {
+    
+                & .title {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,114 @@
+/*--
+/*  08 - Brand CSS
+/*----------------------------------------*/
+
+.upstudy-brand-section {
+
+    & .brand-title-wrap {
+        padding-right: 100px;
+
+        & .title {
+            font-size: 42px;
+            line-height: 52px;
+            font-weight: 600;
+            color: $heading-color;
+        }
+
+        & .btn {
+            height: 55px;
+            line-height: 53px;
+            padding: 0 65px;
+            margin-top: 55px;
+        }
+    }
+
+    & .brand-content-wrap {
+        position: relative;
+
+        &::before {
+            content: "";
+            background: #ebebeb;
+            width: 100%;
+            margin: auto;
+            height: 1px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50%;
+        }
+
+        & .upstudy-brand-box {
+            border-right: 1px solid #ebebeb;
+
+            &.brand-box-03 {
+                border-right: 0;
+            }
+            & .single-brand {
+                text-align: center;
+                height: 130px;
+                line-height: 120px;
+            }
+        }
+    }
+}
+
+.upstudy-brand-section {
+    @media #{$desktop-device} {
+        & .brand-title-wrap {
+            padding-right: 20px;
+        }
+    }
+    @media #{$tablet-device} {
+        & .brand-title-wrap {
+            padding-right: 0px;
+            padding-bottom: 60px;
+        }
+    }
+    @media #{$small-mobile} {
+        & .brand-title-wrap {
+            padding-bottom: 20px;
+        }
+        & .brand-content-wrap {
+    
+            &::before {
+                display: none;
+            }
+    
+            & .upstudy-brand-box {
+                border-right: 0;
+ 
+                & .single-brand {
+                    height: inherit;
+                    line-height: inherit;
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+    @media #{$extra-small-mobile} {
+        & .brand-title-wrap {
+    
+            & .title {
+                font-size: 34px;
+                line-height: 45px;
+            }
+    
+            & .btn {
+                padding: 0 55px;
+                margin-top: 45px;
+            }
+        }
+    }
+}
+
+
+// Home Style Six
+
+.upstudy-brand-section-02 {
+
+    & .brand-wrap {
+        border-top: 1px solid #ebebeb;
+        padding-top: 95px;
+        padding-bottom: 95px;
+    }
+}

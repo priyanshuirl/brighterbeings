@@ -1,0 +1,54 @@
+/*--
+/*  16 - Program CSS
+/*----------------------------------------*/
+
+.program-wrap {
+    margin-top: -160px;
+    position: relative;
+    z-index: 5;
+    @media #{$large-mobile} {
+        margin-top: -120px;
+    }
+}
+
+.program-item {
+    background: $primary-2;
+    display: flex;
+    align-items: center;
+    padding: 45px 40px;
+    padding-right: 65px;
+    @media #{$desktop-device} {
+        padding: 45px 30px;
+    }
+
+    &.color-2 {
+        background: #c62333;
+    }
+
+    & .program-icon {
+
+    }
+
+    & .program-content {
+        margin-left: 25px;
+        flex: 1;
+        @media #{$desktop-device} {
+            margin-left: 20px;
+        }
+
+        & .title {
+            font-size: 30px;
+            line-height: 36px;
+            font-family: $heading-font3;
+            font-weight: 800;
+            color: $white;
+            @media #{$extra-small-mobile} {
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+
+
+

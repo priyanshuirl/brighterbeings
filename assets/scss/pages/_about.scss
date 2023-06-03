@@ -1,0 +1,975 @@
+/*--
+/*  13 - About CSS
+/*----------------------------------------*/
+
+.upstudy-about-section {
+
+    & .about-content {
+        padding-left: 100px;
+        padding-top: 30px;
+        & .title {
+            font-size: 42px;
+            line-height: 52px;
+            font-weight: 600;
+            color: $heading-color;
+            padding-right: 60px;
+
+            & span {
+                color: $primary;
+            }
+        }
+    
+        & .text {
+            font-size: 16px;
+            line-height: 30px;
+            color: #7a7a7a;
+            margin-top: 25px;
+        }
+
+        & .about-list {
+            display: flex;
+            padding-top: 15px;
+            & .list-item {
+                margin-top: 15px;
+
+                &:last-child {
+                    padding-left: 30px;
+                }
+
+                &  .title {
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: 600;
+                    color: $heading-color;
+                    padding-right: 100px;
+                }
+
+                & p {
+                    font-size: 16px;
+                    line-height: 30px;
+                    color: #7a7a7a;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+
+    & .about-img {
+        position: relative;
+        z-index: 1;
+
+        & .shape-1 {
+            position: absolute;
+            left: 33%;
+            top: -3%;
+            z-index: -1;
+        }
+
+    }
+
+}
+
+.upstudy-about-section {
+    @media #{$desktop-device}  {
+        & .about-content {
+            padding-left: 40px;
+
+            & .title {
+                padding-right: 0px;
+            }
+        
+            & .about-list {
+
+                & .list-item {
+    
+                    &  .title {
+                        padding-right: 20px;
+                    }
+                }
+            }
+        }
+
+        & .about-img {
+    
+            & .shape-1 {
+                top: -12%;
+            }
+    
+        }
+    }
+    @media #{$tablet-device}  {
+        & .about-content {
+            padding-left: 0px;
+            padding-top: 40px;
+        
+            & .about-list {
+
+                & .list-item {
+    
+                    &  .title {
+                        padding-right: 0px;
+                    }
+                }
+            }
+        }
+
+        & .about-img {
+    
+            & .shape-1 {
+                top: -0%;
+            }
+    
+        }
+    }
+    @media #{$large-mobile}  {
+        & .about-content {
+            padding-top: 40px;
+        
+            & .title {
+                font-size: 36px;
+                line-height: 46px;
+            }
+        }
+
+        & .about-img {
+    
+            & .shape-1 {
+                height: 410px;
+            }
+    
+        }
+    }
+    @media #{$small-mobile}  {
+        & .about-content {
+        
+            & .title {
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+
+        & .about-img {
+    
+            & .shape-1 {
+                height: 380px;
+            }
+    
+        }
+    }
+    @media #{$extra-small-mobile}  {
+    
+        & .about-content {
+    
+    
+            & .about-list {
+                flex-direction: column;
+                gap: 10px;
+                & .list-item {
+    
+                    &:last-child {
+                        padding-left: 0px;
+                    }
+                }
+            }
+        }
+
+        & .about-img {
+    
+            & .shape-1 {
+                top: -7%;
+                height: 300px;
+            }
+    
+        }
+    }
+}
+
+// Home Style Four
+
+.upstudy-about-section-02 {
+
+    & .about-img {
+        position: relative;
+        z-index: 1;
+
+        & .shape-1 {
+            position: absolute;
+            left: 85px;
+            top: 85px;
+            z-index: -1;
+        }
+
+        & .image {
+            margin-top: -70px;
+        }
+    }
+
+    & .about-content {
+        // padding-right: 80px;
+    
+        & .text {
+            font-size: 18px;
+            line-height: 36px;
+            color: #7a7a7a;
+            margin-top: 45px;
+        }
+
+        & .about-list {
+            padding-top: 30px;
+            & ul {
+
+                & li {
+                    display: flex;
+                    align-items: flex-start;
+                    font-size: 20px;
+                    line-height: 30px;
+                    font-family: $heading-font;
+                    font-weight: 500;
+                    color: #12283b;
+                    & .about-icon {
+                        color: #ff5562;
+                        margin-right: 20px;
+                    }
+                    & + li {
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.upstudy-about-section-02 {
+    @media #{$desktop-device} {
+        padding-bottom: 100px;
+        & .about-img {
+
+            & .shape-1 {
+                left: 40px;
+                top: 40px;
+                width: 360px;
+            }
+    
+            & .image {
+                margin-top: 0px;
+            }
+        }
+    }
+    @media #{$tablet-device} {
+        padding-bottom: 80px;
+        & .about-img {
+            margin-top: 50px;
+
+            & .shape-1 {
+                width: inherit;
+            }
+        }
+    }
+    @media #{$large-mobile} {
+        & .about-img {
+
+            & .shape-1 {
+                width: 410px;
+            }
+        }
+    }
+    @media #{$small-mobile} {
+        & .about-img {
+
+            & .shape-1 {
+                width: 350px;
+            }
+        }
+    }
+    @media #{$extra-small-mobile} {
+        & .about-img {
+
+            & .shape-1 {
+                width: 250px;
+                left: 30px;
+                top: 30px;
+            }
+        }
+    }
+}
+
+ 
+// Home Style Five
+
+.upstudy-about-section-03 {
+    overflow: hidden;
+
+    & .about-img-wrap {
+        position: relative;
+        z-index: 1;
+
+        & .about-shape {
+            position: absolute;
+            right: 23%;
+            top: -5%;
+            z-index: -1;
+            animation: zoom-inout 3s infinite;
+        }
+
+        & .about-img-big {
+
+            & img {
+                border-radius: 50px;
+            }
+        }
+
+        & .about-img-sm {
+            padding-left: 110px;
+            margin-top: 30px;
+
+            & img {
+                border-radius: 50px;
+            }
+        }
+
+        & .about-img-bottom {
+            position: absolute;
+            right: 5px;
+            bottom: 30px;
+
+            & img {
+                border-radius: 50px;
+            }
+        }
+
+        & .about-text-shape {
+            position: absolute;
+            right: 50px;
+            top: 50px;
+        }
+    }
+
+    & .about-content {
+        padding-left: 110px;
+        padding-right: 35px;
+        padding-top: 25px;
+
+        & .section-title-3 {
+
+            & .sub-title {
+        
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -15px;
+                    background: #f6520a;
+                    width: 110px;
+                    height: 2px;
+                    transform: translateX(0);
+                }
+            }
+        }
+
+        & .text {
+            font-size: 16px;
+            line-height: 30px;
+            color: #525252;
+            margin-top: 30px;
+        }
+
+        & .about-list {
+            padding-top: 25px;
+
+            & ul {
+
+                & li {
+                    display: flex;
+                    align-items: flex-start;
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 600;
+                    color: #1e1e1e;
+
+                    & + li {
+                        margin-top: 10px;
+                    }
+
+                    & .about-icon {
+                        font-size: 14px;
+                        color: #f6520a;
+                        margin-right: 8px;
+                    }
+
+                }
+            }
+        }
+
+        & .btn {
+            padding: 0 50px;
+            border-radius: 35px;
+            background: #f6520a;
+            margin-top: 50px;
+
+            &:hover {
+                background: #ffa300;
+            }
+        }
+    }
+}
+
+.upstudy-about-section-03  {
+    @media #{$desktop-device} {
+        & .about-img-wrap {
+    
+            & .about-shape {
+                right: 8%;
+            }
+
+    
+            & .about-img-sm {
+                padding-left: 0px;
+            }
+    
+    
+            & .about-text-shape {
+                right: 0px;
+            }
+        }
+
+        & .about-content {
+            padding-left: 50px;
+            padding-right: 0px;
+        }
+    }
+    @media #{$tablet-device} {
+        & .about-img-wrap {
+
+            & .about-shape {
+                right: 37%;
+                top: -4%;
+            }
+    
+            & .about-img-bottom {
+                right: 160px;
+ 
+            }
+    
+            & .about-text-shape {
+                right: 120px;
+            }
+        }
+
+        & .about-content {
+            padding-left: 0px;
+            margin-top: 40px;
+        }
+    }
+    @media #{$large-mobile} {
+        & .about-img-wrap {
+
+            & .about-shape {
+                right: 17%;
+                top: -3%;
+            }
+    
+            & .about-img-bottom {
+                right: 0px;
+ 
+            }
+    
+            & .about-text-shape {
+                right: 0px;
+            }
+        }
+    }
+    @media #{$extra-small-mobile} {
+        & .about-img-wrap {
+
+            & .about-img-sm {
+                display: none;
+            }
+    
+            & .about-img-bottom {
+                position: relative;
+                text-align: center;
+                bottom: 0;
+                margin-top: 30px;
+            }
+    
+            & .about-text-shape {
+                top: 135px;
+            }
+        }
+    }
+}
+
+// Home Style Six
+
+.upstudy-about-section-04 {
+    padding-bottom: 110px;
+
+    & .about-content {
+        padding-right: 110px;
+
+        & .title {
+            font-size: 42px;
+            line-height: 52px;
+            font-family: $heading-font3;
+            font-weight: 800;
+            color: #2f2a55;
+            padding-right: 85px;
+        }
+
+        & .text {
+            font-size: 16px;
+            line-height: 30px;
+            color: #7a7a7a;
+            margin-top: 30px;
+        }
+
+        & .about-list {
+            padding-top: 40px;
+
+            & ul {
+
+                & li {
+                    display: flex;
+                    align-items: flex-start;
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 400;
+                    color: #2f2a55;
+
+                    & + li {
+                        margin-top: 15px;
+                    }
+
+                    & .about-icon {
+                        height: 25px;
+                        width: 25px;
+                        line-height: 25px;
+                        border-radius: 50%;
+                        text-align: center;
+                        font-size: 12px;
+                        background: #eff5ff;
+                        color: #dc3545;
+                        margin-right: 15px;
+                    }
+
+                }
+            }
+        }
+    }
+
+    & .about-img-wrap {
+        display: flex;
+
+        & .about-img-big {
+            position: relative;
+
+            & img {
+                height: 100%;
+            }
+
+            & .play-btn {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -55%);
+
+                & a {
+                    width: 100px;
+                    height: 100px;
+                    background: $white;
+                    display: inline-block;
+                    line-height: 100px;
+                    text-align: center;
+                    font-size: 16px;
+                    color: #dc3545;
+                    position: relative;
+                    border-radius: 50%;
+
+                    &::before {
+                        content: "";
+                        border: 1px solid $white;
+                        position: absolute;
+                        z-index: 0;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        display: block;
+                        width: 120px;
+                        height: 120px;
+                        border-radius: 50%;
+                    }
+
+                    &:hover {
+                        background: $primary-2;
+                        color: $white;
+                    }
+                }
+            }
+        }
+        
+        & .about-img-small {
+
+        }
+    }
+}
+
+.upstudy-about-section-04 {
+    @media #{$desktop-device} {
+        & .about-content {
+            padding-right: 60px;
+    
+            & .title {
+                padding-right: 0px;
+            }
+        }
+    } 
+    @media #{$tablet-device} {
+        padding-bottom: 80px;
+        & .about-img-wrap {
+            margin-top: 50px;
+        }
+    }
+    @media #{$large-mobile} {
+        padding-bottom: 60px;
+        & .about-content {
+            padding-right: 0px;
+    
+            & .title {
+                font-size: 35px;
+                line-height: 45px;
+            }
+    
+        }
+    }
+    @media #{$small-mobile} {
+        & .about-content {
+    
+            & .title {
+                font-size: 30px;
+                line-height: 40px;
+            }
+    
+        }
+    }
+    @media #{$extra-small-mobile} {
+        & .about-img-wrap {
+            flex-direction: column;
+
+            & .about-img-small {
+                text-align: center;
+            }
+        }
+    }
+}
+
+  
+.upstudy-about-section-05 {
+
+    & .about-img-item {
+
+        & .about-img {
+
+            & a {
+
+                & img {
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        & .about-content {
+            margin-top: 40px;
+            padding-right: 45px;
+
+            & .title {
+                font-size: 24px;
+                line-height: 34px;
+                font-weight: 600;
+                color: #2f2a55;
+
+                &:hover {
+
+                    & a {
+                        color: $primary-2;
+                    }
+                }
+            }
+
+            &  p{
+                font-size: 16px;
+                line-height: 30px;
+                color: #7a7a7a;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    & .about-link-wrap {
+        border: 1px solid #1d3f6b;
+        border-radius: 10px;
+        padding: 40px 25px 40px 80px;
+
+        & .title {
+            font-size: 30px;
+            line-height: 40px;
+            font-weight: 600;
+            color: #2f2a55;
+            margin-bottom: 25px;
+        }
+
+        & .link-list {
+
+            & ul {
+
+                & li {
+                    font-size: 18px;
+                    line-height: 30px;
+                    font-weight: 500;
+                    color: #5a5960;
+
+                    & i {
+                        color: #dc3545;
+                        position: relative;
+                        top: 1px;
+                        margin-left: 8px;
+                        transition: $transition-default;
+                    }
+
+                    & + li {
+                        border-top: 1px solid #ebebeb;
+                        margin-top: 14px;
+                        padding-top: 14px;
+                    }
+
+                    &:hover {
+
+                        & a {
+                            color: #dc3545;
+                        }
+
+                        & i {
+                            margin-left: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+      
+}
+
+.upstudy-about-section-05 {
+    @media #{$desktop-device} {
+        & .about-link-wrap {
+            padding: 40px 25px 40px 60px;
+        }
+    }
+    @media #{$tablet-device} {
+        & .about-link-wrap {
+            margin-top: 50px;
+        }
+    }
+    @media #{$large-mobile} {
+
+        & .about-wrap {
+            margin-top: -30px;
+        }
+        & .about-img-item {
+            margin-top: 30px;
+        }
+    }
+}
+
+// About Page Style
+.upstudy-about-section-06 {
+
+    & .about-img-wrap {
+        position: relative;
+
+        & .shape-1 {
+            position: absolute;
+            right: 25px;
+            top: -35px;
+        }
+
+        & .about-img-big {
+            overflow: hidden;
+
+            & img {
+                border-radius: 5px;
+            }
+        }
+
+        & .about-img-sm {
+            position: absolute;
+            right: 0;
+            bottom: 50px;
+            border: 8px solid $white;
+            border-radius: 5px;
+        }
+    }
+
+    & .about-content {
+        padding-left: 100px;
+        padding-top: 30px;
+        & .about-title {
+            font-size: 42px;
+            line-height: 52px;
+            font-weight: 600;
+            color: $heading-color;
+            padding-right: 60px;
+
+            & span {
+                color: $primary;
+            }
+        }
+    
+        & .text {
+            font-size: 16px;
+            line-height: 30px;
+            color: #7a7a7a;
+            margin-top: 25px;
+        }
+
+        & .about-list {
+            display: flex;
+            padding-top: 10px;
+            border-bottom: 1px solid #ebebeb;
+            padding-bottom: 35px;
+            & .list-item {
+                display: flex;
+                align-items: center;
+                margin-top: 20px;
+
+                & .icon {
+                    margin-right: 15px;
+
+                    & img {
+                        width: 40px;
+                        transition: $transition-default;
+                    }
+                }
+
+                &  .title {
+                    flex: 1;
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: 600;
+                    color: $heading-color;
+                    padding-right: 45px;
+                }
+
+                &:hover {
+                    & .icon {
+    
+                        & img {
+                            transform: rotateY(180deg);
+                        }
+                    }
+                }
+            }
+        }
+
+        & .read-more {
+            font-size: 16px;
+            font-family: $heading-font;
+            font-weight: 700;
+            color: $primary;
+            margin-top: 35px;
+
+            & i {
+                position: relative;
+                top: 1px;
+                left: 5px;
+            }
+
+            &:hover {
+                color: #111a24;
+            }
+        }
+    }
+}
+
+.upstudy-about-section-06 {
+    @media #{$desktop-device} {
+        & .about-img-wrap {
+    
+            & .shape-1 {
+                right: -10px;
+                top: -50px;
+                width: 270px;
+            }
+    
+    
+            & .about-img-sm {
+                bottom: 0px;
+            }
+        }
+
+        & .about-content {
+            padding-left: 45px;
+
+            & .about-title {
+                padding-right: 0px;
+            }
+
+            & .about-list {
+
+                & .list-item {
+    
+                    &  .title {
+                        padding-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+    @media #{$tablet-device} {
+        & .about-img-wrap {
+            text-align: center;
+            & .shape-1 {
+                right: 0;
+                top: 0;
+            }
+        }
+
+        & .about-content {
+            padding-left: 0px;
+            padding-top: 50px;
+        }
+    }
+    @media #{$large-mobile} {
+        & .about-content {
+
+            & .about-title {
+                font-size: 36px;
+                line-height: 46px;
+            }
+        }
+    }
+    @media #{$small-mobile} {
+        & .about-content {
+
+            & .about-title {
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+    }
+    @media #{$extra-small-mobile} {
+        & .about-img-wrap {
+    
+            & .shape-1 {
+                display: none;
+            }
+    
+    
+            & .about-img-sm {
+                position: relative;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+ 

@@ -1,0 +1,203 @@
+/*--
+/*  04 - Category CSS
+/*----------------------------------------*/
+
+.upstudy-category-section {
+    @media #{$desktop-device}  {
+        padding-top: 35px;
+    }
+}
+.category-content-wrap {
+    padding-top: 50px;
+}
+.category-item {
+    display: flex;
+    align-items: center;
+    background: #f7efff;
+    border-radius: 50px;
+    padding: 5px 8px;
+    margin-top: 30px;
+
+    &.color-2 {
+        background: #fff6f3;
+    }
+    &.color-3 {
+        background: #effafd;
+    }
+    &.color-4 {
+        background: #fff7ee;
+    }
+
+    & .category-icon {
+        height: 70px;
+        width: 70px;
+        line-height: 70px;
+        background: $white;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    & .category-content {
+        margin-left: 10px;
+        & .title {
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: 500;
+            color: $heading-color;
+            transition: $transition-default;
+        }
+    }
+
+    &:hover {
+
+        & .category-content {
+
+            & .title {
+                color: $primary;
+            }
+        }
+    }
+}
+
+
+// Home Style TWo
+.upstudy-category-section-02 {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    padding-bottom: 170px;
+    position: relative;
+    z-index: 1;
+    @media #{$desktop-device}  {
+        padding-bottom: 100px;
+    }
+    @media #{$tablet-device}  {
+        padding-bottom: 80px;
+    }
+
+    & .shape-1 {
+        position: absolute;
+        right: -130px;
+        top: 140px;
+        z-index: -1;
+    }
+
+    & .shape-2 {
+        position: absolute;
+        left: 60px;
+        top: 110px;
+        z-index: -1;
+    }
+
+    & .shape-3 {
+        position: absolute;
+        left: 3%;
+        bottom: 38%;
+        animation: zoom-inout 3s infinite;
+        z-index: -1;
+    }
+
+    & .category-wrap {
+        padding-top: 50px;
+    }
+}
+
+.category-item-02 {
+    margin-top: 30px;
+    position: relative;
+    transform: translate3d(0, 0, 0);
+    transition: $transition-default;
+    & .category-img {
+        border-radius: 10px;
+        overflow: hidden;
+        & a {
+            display: block;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                background: linear-gradient(180deg, #FFFFFF00 43%, #00000082 63%);
+                z-index: 0;
+            }
+        }
+    }
+
+    & .category-content {
+        position: absolute;
+        bottom: 55px;
+        left: 50%;
+        transform: translateX(-50%);
+        & .title {
+            
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: -3px;
+            margin-top: 30px;
+            & a {
+                color: $white;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+
+    &:hover {
+        transform: translateY(-5px) translate3d(0, -5px, 0);
+    }
+}
+ 
+// Home Style Three
+
+  
+.upstudy-category-section-03 {
+
+    & .category-item {
+        background: none;
+        border: 1px solid #e1e1e1;
+        border-radius: 10px;
+        padding: 20px 25px;
+        transition: $transition-default;
+    
+    
+        & .category-icon {
+            line-height: 68px;
+            background: #f7efff;
+
+            &.color-2 {
+                background: #fff6f3;
+            }
+            &.color-3 {
+                background: #effafd;
+            }
+            &.color-4 {
+                background: #fff7ee;
+            }
+        }
+
+        & .category-content {
+
+            & .title {
+                transition: $transition-default;
+            }
+        }
+
+        &:hover {
+            border: 1px solid $primary;
+
+            & .category-content {
+
+                & .title {
+                    color: $primary;
+                }
+            }
+        }
+    }
+}

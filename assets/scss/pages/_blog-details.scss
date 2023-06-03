@@ -1,0 +1,376 @@
+/*--
+/*  19 - Blog Details CSS
+/*----------------------------------------*/
+
+// Blog Details Section
+.blog-details-section {
+    
+    & .blog-details-wrap {
+        margin-top: -70px;
+    }
+}
+ 
+// Blog Details Post
+.blog-details-post {
+    margin-top: 70px;
+
+    & .single-blog-post {
+        margin-top: 40px;
+    
+        &.single-blog {
+
+            & .blog-image {
+
+                & a {
+                    display: block;
+                    & img {
+                        width: 100%;
+                    }
+                }
+            }
+            
+            & .blog-content {
+                padding: 40px 0px 0px;
+                width: 100%;
+                left: 0;
+                bottom: 0px;
+                transform: translateX(0);
+                margin-top: 0px;
+        
+        
+                & .title {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+    
+                & .text {
+                    font-size: 16px;
+                    line-height: 30px;
+                    margin-top: 20px;
+                    padding-bottom: 40px;
+                }
+            }
+        }
+    }
+
+    & .blog-details-content {
+
+        & .blog-quote {
+            background-color: #fdf8f4;
+            border-left: 5px solid $primary;
+            border-radius: 5px;
+            margin-top: 40px;
+
+            & .blockquote {
+                padding: 50px 80px 35px 35px;
+                margin-bottom: 0;
+                position: relative;
+                @media #{$desktop-device} {
+                    padding: 50px 50px 35px 35px;
+                }
+                @media #{$extra-small-mobile} {
+                    padding: 50px 35px 35px 35px;
+                }
+
+                &:not(:first-child) {
+                    margin-top: 25px;
+                }
+                &:not(:last-child) {
+                    margin-bottom: 25px;
+                }
+
+                & .blockquote-icon {
+                    flex-shrink: 0;
+                    height: 65px;
+                    width: 65px;
+                    line-height: 63px;
+                    background: $white;
+                    box-shadow: 0px 9px 68px 0px rgba(0, 0, 0, 0.08);
+                    text-align: center;
+                    border-radius: 50%;
+                    position: relative;
+                    top: -90px;
+                    margin-bottom: -65px;
+
+                    & svg {
+                        fill: $primary;
+                        width: 30px;
+                    }
+                }
+                & p {
+                    display: inline;
+                    font-size: 22px;
+                    font-family: $heading-font;
+                    font-weight: 400;
+                    color: #6f6d80;
+                    line-height: 32px;
+                    margin-top: 0;
+                }
+
+                & .name {
+                    font-size: 16px;
+                    line-height: 30px;
+                    color: $heading-color;
+                    margin-top: 5px;
+                }
+            }
+        }
+        & .blog-details-text {
+            margin-top: 60px;
+
+            & .title {
+                font-size: 24px;
+                line-height: 36px;
+                font-weight: 600;
+                color: $heading-color;
+            }
+
+            & p {
+                font-size: 16px;
+                line-height: 30px;
+                color: #7a7a7a;
+                margin-top: 5px;
+            }
+        }
+        & .blog-details-tag-share {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 65px;
+            padding-top: 15px;
+            border-top: 1px solid #e3e3e5;
+
+            & .blog-details-tag {
+                padding-top: 20px;
+                & .sidebar-widget {
+                    margin-top: 0;
+                    display: flex;
+                    align-items: center;
+
+                    & .label {
+                        font-size: 14px;
+                        line-height: 30px;
+                        font-family: $heading-font;
+                        font-weight: 400;
+                        color: $heading-color;
+                        margin-right: 10px;
+                    }
+
+                    & .sidebar-tag {
+
+                        & li {
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+            }
+
+            & .blog-details-share {
+                display: flex;
+                align-items: center;
+                padding-top: 20px;
+
+                & li {
+                    display: inline-block;
+                    margin-right: 10px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    & a {
+                        display: inline-block;
+                        font-size: 13px;
+                        width: 35px;
+                        height: 35px;
+                        line-height: 35px;
+                        text-align: center;
+                        color: $white;
+                        border-radius: 50%;
+
+                        &.share-facebook {
+                            background: #3452cf;
+                        }
+                        &.share-twitter {
+                            background: #39adf1;
+                        }
+                        &.share-pinterest {
+                            background: #d54443;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        & .upstudy-post-pagination {
+            display: flex;
+            flex-wrap: wrap;
+            background: $white;
+            box-shadow: 0px 0px 70px 0px rgba(0, 0, 0, 0.16);
+            padding: 10px 30px;
+            margin-top: 80px;
+            overflow: hidden;
+            position: relative;
+            @media #{$desktop-device} {
+                padding: 10px 20px;
+            }
+            @media #{$small-mobile} {
+                padding: 0 10px;
+            }
+
+            &::before {
+                position: absolute;
+                content: '';
+                width: 1px;
+                background-color: #e1e1e1;
+                left: 50%; 
+                transform: translateX(-50%);
+                top: 30px;
+                bottom: 30px;
+                @media #{$large-mobile} {
+                    width: auto;
+                    height: 1px;
+                    left: 30px;
+                    right: 30px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    bottom: auto;
+                }
+            }
+            
+            & .previous-post,
+            & .next-post {
+                width: 50%;
+                @media #{$large-mobile} {
+                    width: 100%;
+                }
+            }
+            & .blog-pagination-post {
+                display: flex;
+                align-items: center;
+                padding: 30px 0;
+                @media #{$desktop-device} {
+                    padding: 20px 0;
+                }
+
+                & .post-thumb {
+                    flex-shrink: 0;
+
+                    & a {
+                        & img {
+                            border-radius: 50%;
+                            object-position: center;
+                            object-fit: cover;
+                        }
+                        & i {
+                            font-size: 14px;
+                            color: $primary;
+                            padding: 0 10px;
+                        }
+                    }
+                }
+                & .post-content {
+                    flex-grow: 1;
+                    padding: 0 20px;
+                    @media #{$desktop-device} {
+                        padding: 0 15px;
+                    }
+                    @media #{$small-mobile} {
+                        padding: 0 13px;
+                    }
+
+                    & .title {
+                        font-size: 18px;
+                        line-height: 22px;
+                        font-weight: 600;
+                        color: $heading-color;
+                        @media #{$desktop-device} {
+                            font-size: 15px;
+                        }
+                    }
+                    & .date {
+                        font-size: 12px;
+                        line-height: 22px;
+                        color: #838383;
+
+                        & i {
+                            color: $primary;
+                            margin-right: 6px;
+                        }
+                    }
+                }
+            }
+            
+        }
+        & .comment-wrap {
+
+            & .comment-form {
+                margin-top: 50px;
+                & .comment-title {
+                    font-size: 22px;
+                    line-height: 30px;
+                    color: $heading-color;
+                }
+                & p {
+                    font-size: 14px;
+                    line-height: 30px;
+                    color: #686f7a;
+                }
+                & .comment-form-wrap {
+                    padding-top: 10px;
+                    & .single-form {
+                        margin-top: 20px;
+                        & .form-control {
+                            border: 1px solid transparent;
+                            background: #f6f7f9;
+                            border-radius: 0;
+                            @include placeholder{
+                                opacity: 0.95;
+                                font-size: 13px;
+                                font-family: $heading-font;
+                                color: #9d9d9d;
+                                font-weight: 400;
+                            }
+                            &:focus{
+                                outline: none;
+                                border-color: $primary;
+                            }
+                        }
+                        & textarea {
+                            &.form-control {
+                                height: 135px;
+                                padding-top: 15px;
+                                font-size: 13px;
+                                color: #415674;
+                                font-weight: 600;
+                                padding: 10px 25px;
+                                resize: none;
+                                &:focus{
+                                    outline: none;
+                                    box-shadow: none;
+                                }
+                            }
+                        }
+                        
+                    }
+                    & .form-btn {
+
+                        & .btn {
+                            height: 40px;
+                            line-height: 38px;
+                            box-shadow: 11px 10px 38px 0 rgba(46, 63, 99, 0.15);
+                            margin-top: 25px;
+                            font-size: 16px;
+                            padding: 0 45px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+  

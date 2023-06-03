@@ -1,0 +1,397 @@
+/*--
+/*  09 - Testimonial CSS
+/*----------------------------------------*/
+  
+// Testimonial Section
+.upstudy-testimonial-section {
+
+    & .testimonial-wrap {
+        height: 535px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 5px;
+        padding-top: 70px;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        z-index: 1;
+        @media #{$tablet-device} {
+            height: auto;
+            padding-bottom: 70px;
+        }
+
+        & .shape-1 {
+            position: absolute;
+            right: 65px;
+            top: 70px;
+            animation: zoom-inout 3s infinite;
+            z-index: -1;
+            @media #{$tablet-device}  {
+                right: 30px;
+                top: 45px;
+            }
+        }
+        
+
+        & .testimonial-author {
+            width: 50%;
+            text-align: center;
+            position: relative;
+            padding-left: 40px;
+            @media #{$tablet-device} {
+                width: 100%;
+                margin: 0 auto;
+                padding-left: 0;
+            }
+
+            & .testimonial-author-wrap {
+
+                & .author-image {
+
+                    & img {
+                        width: 380px;
+                        border: 10px solid $white;
+                        border-radius: 50%;
+                        @media #{$desktop-device} {
+                            width: 280px;
+                        }
+                        @media #{$extra-small-mobile} {
+                            width: 200px;
+                        }
+                    }
+                }
+            }
+        }
+
+        & .testimonial-content {
+            width: 50%;
+            padding-left: 105px;
+    
+            @media #{$desktop-device} {
+                padding-left: 80px;
+                // padding-right: 50px;
+            }
+            @media #{$tablet-device} {
+                width: 100%;
+                padding-left: 60px;
+                padding-right: 60px;
+                margin-bottom: 30px;
+            }
+            @media #{$small-mobile} {
+                text-align: center;
+                padding-left: 15px;
+                padding-right: 15px;
+                margin-bottom: 20px;
+            }
+
+            & .single-testimonial-content {
+                background: $white;
+                border-radius: 20px;
+                padding: 50px 90px 70px;
+                @media #{$desktop-device} {
+                    padding: 50px 40px 70px;
+                }
+                @media #{$extra-small-mobile}  {
+                    padding: 50px 30px 70px;
+                }
+
+                & .title {
+                    font-size: 36px;
+                    line-height: 48px;
+                    font-weight: 600;
+                    color: $heading-color;
+                    @media #{$extra-small-mobile}  {
+                        font-size: 30px;
+                        line-height: 42px;
+                    }
+                }
+
+                & p {
+                    font-size: 22px;
+                    font-family: $heading-font;
+                    font-weight: 400;
+                    line-height: 36px;
+                    color: #7a7a7a;
+                    margin-top: 25px;
+                    @media #{$small-mobile} {
+                        font-size: 26px;
+                    }
+                    @media #{$extra-small-mobile} {
+                        font-size: 24px;
+                    }
+                }
+
+                & .name {
+                    font-size: 16px;
+                    font-family: $heading-font;
+                    font-weight: 600;
+                    color: $heading-color;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+
+
+// Testimonial Pagination
+.testimonial-content-active {
+
+    & .swiper-pagination {
+        position: relative;
+        text-align: center;
+        bottom: 60px;
+
+        & .swiper-pagination-bullet {
+            margin: 0 15px 0 0;
+        }
+    }
+}
+  
+// Home Style Three
+ 
+.upstudy-testimonial-section-02 {
+    background: #fdf8f4;
+    padding-top: 460px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    @media #{$desktop-device}  {
+        padding-top: 430px;
+    }
+    @media #{$tablet-device}  {
+        padding-top: 370px;
+    }
+    @media #{$large-mobile}{
+        padding-top: 270px;
+    }
+    @media #{$extra-small-mobile} {
+        padding-top: 170px;
+    }
+
+    & .shape-1 {
+        width: 68px;
+        height: 68px;
+        border: 5px solid #b9e2d8;
+        border-radius: 50%;
+        position: absolute;
+        left: 9%;
+        top: 31%;
+        animation: zoom-inout 3s infinite;
+        z-index: -1;
+        @media #{$desktop-device}{
+            top: 40%;
+        }
+        @media #{$tablet-device}  {
+            top: 26%;
+        }
+    }
+
+    & .shape-2 {
+        width: 905px;
+        height: 905px;
+        border: 2px dashed #fad69c;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -22%;
+        right: -7%;
+        z-index: -1;
+        @media #{$desktop-device}{
+            width: 750px;
+            height: 750px;
+        }
+        @media #{$tablet-device}{
+            width: 520px;
+            height: 520px;
+        }
+        @media #{$small-mobile} {
+            width: 420px;
+            height: 420px;
+        }
+    }
+
+    & .testimonial-content-wrap-02 {
+        padding-top: 70px;
+    }
+}
+
+.single-testimonial-02 {
+    background: $white;
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.09);
+    border-radius: 20px;
+    width: 525px;
+    margin: 10px 80px;
+    position: relative;
+    @media #{$desktop-device}{
+        margin: 10px auto;
+    }
+    @media #{$large-mobile}{
+        width: 100%;
+        text-align: center;
+        border-radius: 20px 20px 20px 20px;
+    }
+
+    & .testimonial-thumb {
+        position: absolute;
+        left: -15%;
+        top: 50%;
+        transform: translateY(-65%);
+        z-index: 3;
+        @media #{$large-mobile}{
+            position: relative;
+            text-align: center;
+            left: 0;
+            top: 0;
+            padding-top: 40px;
+            transform: translateY(0%);
+        }
+
+        & img {
+            border-radius: 50%;
+        }
+    }
+
+    & .testimonial-content {
+        padding: 30px 130px 60px;
+        padding-right: 40px;
+        @media #{$large-mobile}{
+            padding: 15px 45px 50px;
+        }
+        @media #{$extra-small-mobile}{
+            padding: 15px 30px 50px;
+        }
+
+        & i {
+            font-size: 48px;
+            color: $primary;
+        }
+
+        & p {
+            font-size: 22px;
+            line-height: 36px;
+            font-weight: 400;
+            color: #7a7a7a;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+    
+        & .name {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20px;
+            color: $heading-color;
+        }
+    }
+}
+  
+.testimonial-02-active {
+
+    & .swiper-pagination{
+        position: relative;
+        margin-top: 50px;
+        & .swiper-pagination-bullet {
+            margin: 0 7px;
+            background-color: #e1e1e1;
+            
+            &.swiper-pagination-bullet-active{
+                background-color: $primary;
+            }
+        }
+    }
+}
+
+// Home Style Four
+
+.upstudy-testimonial-section-03 {
+    
+    & .testimonial-wrap {
+        height: 610px;
+        padding-top: 105px;
+        border: 3px dashed #38b0e4;
+        border-radius: 50px;
+        justify-content: end;
+
+        & .testimonial-content {
+            width: 50%;
+            padding-left: 0px;
+            padding-right: 105px;
+        }
+    }
+}
+
+.upstudy-testimonial-section-03 {
+    @media #{$desktop-device} {
+        & .testimonial-wrap {
+            height: 550px;
+            padding-top: 80px;
+            & .testimonial-content {
+
+                & .single-testimonial-content {
+                    padding: 50px 35px 70px;
+                }
+            }
+        }
+    }
+    @media #{$tablet-device} {
+        & .testimonial-wrap {
+            height: 510px;
+            padding-top: 80px;
+            padding-left: 65px;
+            padding-right: 65px;
+            & .testimonial-content {
+                width: 100%;
+                padding-right: 0;
+            }
+        }
+    }
+    @media #{$small-mobile} {
+        & .testimonial-wrap {
+            height: auto;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
+    @media #{$extra-small-mobile} {
+        & .testimonial-wrap {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}
+
+.testimonial-3-active {
+
+    & .swiper-pagination{
+        position: relative;
+        bottom: 50px;
+        & .swiper-pagination-bullet {
+            margin: 0 7px;
+            background-color: #ededed;
+            
+            &.swiper-pagination-bullet-active{
+                background-color: #ff5562;
+            }
+        }
+    }
+}
+
+// About Page Style
+.upstudy-testimonial-section-04 {
+    background: $white;
+
+    & .testimonial-02-active {
+
+        & .swiper-pagination{
+            & .swiper-pagination-bullet {
+                margin: 0 7px;
+                background-color: #ebebeb;
+                
+                &.swiper-pagination-bullet-active{
+                    background-color: $primary;
+                }
+            }
+        }
+    }
+}
+ 

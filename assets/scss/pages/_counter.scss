@@ -1,0 +1,541 @@
+/*--
+/*  07 - Counter CSS
+/*----------------------------------------*/
+
+
+.upstudy-counter-section {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 170px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+    & .shape-1 {
+        position: absolute;
+        right: -80px;
+        bottom: 20px;
+        z-index: -1;
+    }
+
+    & .shape-2 {
+        position: absolute;
+        left: 60px;
+        top: 110px;
+        z-index: -1;
+    }
+
+    & .shape-3 {
+        position: absolute;
+        left: 40px;
+        bottom: 20px;
+        animation: zoom-inout 3s infinite;
+        z-index: -1;
+    }
+
+    & .counter-wrap {
+        margin-top: -40px;
+    }
+}
+
+.upstudy-counter-section {
+    @media #{$desktop-device} {
+        padding-top: 120px;
+        padding-bottom: 140px;
+        & .shape-1 {
+            right: -180px;
+
+            & img {
+                width: 270px;
+            }
+        }
+        & .shape-2 {
+            left: 40px;
+            top: 65px;
+        }
+    }
+    @media #{$tablet-device} {
+        & .shape-1 {
+            right: -150px;
+            bottom: 40px;
+
+            & img {
+                width: 230px;
+            }
+        }
+    }
+    @media #{$large-mobile} {
+        padding-bottom: 130px;
+    }
+}
+
+.single-counter {
+    margin-top: 30px;
+    & .counter-content {
+        margin-top: 20px;
+
+        & .title {
+            font-size: 48px;
+            line-height: 1;
+            font-weight: 500;
+            color: $white;
+            @media #{$large-mobile} {
+                font-size: 42px;
+            }
+        }
+        & p {
+            font-size: 16px;
+            line-height: 30px;
+            color: $white;
+        }
+    }
+}
+
+
+// Home Style Two
+
+.upstudy-counter-wrap {
+    max-width: 940px;
+    margin: 0 auto;
+    padding-top: 60px;
+    & .counter-item {
+        margin-top: 30px;
+        padding-left: 60px;
+
+        & .counter-content {
+            margin-top: 25px;
+
+            & .title {
+                font-size: 48px;
+                line-height: 1;
+                font-weight: 500;
+                color: $heading-color;
+            }
+
+            & p {
+                font-size: 16px;
+                line-height: 30px;
+                color: #7a7a7a;
+            }
+        }
+    }
+}
+
+.upstudy-counter-wrap {
+    @media #{$tablet-device} {
+        & .counter-item {
+            padding-left: 0px;
+        }
+    }
+    @media #{$large-mobile}  {
+        text-align: center;
+    }
+    @media #{$extra-small-mobile} {
+        padding-top: 45px;
+        & .counter-item {
+    
+            & .counter-content {
+    
+                & .title {
+                    font-size: 42px;
+                }
+            }
+        }
+    }
+}
+
+// Home Style Three
+.upstudy-counter-section-02 {
+
+    & .counter-wrap {
+        background: #fdf8f4;
+        border-radius: 20px;
+        position: relative;
+        padding: 90px 105px 115px 70px;
+        z-index: 1;
+
+        & .shape-1 {
+            width: 68px;
+            height: 68px;
+            border: 5px solid #fbecb8;
+            border-radius: 50%;
+            position: absolute;
+            top: 6%;
+            left: 6%;
+            animation: zoom-inout 3s infinite;
+            z-index: -1;
+        }
+
+        & .shape-2 {
+            position: absolute;
+            right: 5%;
+            top: 12%;
+            z-index: -1;
+        }
+    }
+
+    & .counter-left {
+        padding-top: 80px;
+
+        & .title {
+            font-size: 42px;
+            line-height: 60px;
+            font-weight: 600;
+        }
+
+        & .read-more {
+            font-size: 16px;
+            font-weight: 700;
+            color: $primary;
+            margin-top: 35px;
+
+            & i {
+                position: relative;
+                top: 1px;
+                left: 5px;
+            }
+
+            &:hover {
+                color: #111a24;
+            }
+        }
+    }
+
+    & .counter-right {
+        margin-top: -25px;
+        padding-left: 15px;
+
+        & .counter-item-wrap {
+
+            &.counter-item-wrap-02 {
+                padding-top: 50px;
+            }
+
+            & .single-counter {
+                background: $white;
+                padding: 40px 65px 50px;
+                border-radius: 20px;
+                margin-top: 25px;
+
+                & .counter-icon {
+                    
+                    & img {
+                        height: 35px;
+                        transition: $transition-default;
+                    }
+                }
+                & .counter-content {
+                    margin-top: 20px;
+            
+                    & .title {
+                        color: $heading-color;
+                    }
+                    & p {
+                        color: $heading-color;
+                    }
+                }
+
+                &:hover {
+                    & .counter-icon {
+                    
+                        & img {
+                            transform: rotateY(180deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.upstudy-counter-section-02 {
+
+    @media #{$desktop-device} {
+
+        & .counter-wrap {
+    
+            & .shape-1 {
+                top: 5%;
+            }
+    
+            & .shape-2 {
+                top: 35%;
+            }
+        }
+        & .counter-left {
+            padding-top: 0px;
+        }
+
+        & .counter-right {
+            margin-top: 0px;
+            padding-left: 0px;
+            padding-top: 25px;
+        }
+    }
+    @media #{$tablet-device} {
+
+        & .counter-wrap {
+            padding: 80px 60px 90px 60px;
+        }
+        & .counter-left {
+            padding-top: 0px;
+        }
+
+        & .counter-right {
+            
+            & .counter-item-wrap {
+
+    
+                & .single-counter {
+                    padding: 40px 40px 50px;
+                }
+            }
+        }
+    }
+    @media #{$large-mobile} {
+
+        & .counter-left {
+            
+            & .title {
+                font-size: 36px;
+                line-height: 55px;
+            }
+        }
+
+        & .counter-right {
+            
+            & .counter-item-wrap {
+
+                &.counter-item-wrap-02 {
+                    padding-top: 0px;
+                }
+            }
+        }
+    }
+    @media #{$extra-small-mobile} {
+
+        & .counter-wrap {
+            padding: 80px 35px 80px 35px;
+        }
+
+        & .counter-left {
+            
+            & .title {
+                font-size: 30px;
+                line-height: 48px;
+            }
+        }
+
+        & .counter-right {
+            
+            & .counter-item-wrap {
+
+    
+                & .single-counter {
+                    padding: 40px 30px 50px;
+                }
+            }
+        }
+    }
+}
+
+// Home Style Six
+
+.upstudy-counter-section-03 {
+    position: relative;
+    overflow: hidden;
+    padding-top: 195px;
+    padding-bottom: 120px;
+    background: #eff5ff;
+    z-index: 1;
+
+    & .shape-1 {
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        right: 0;
+        left: 0px;
+        top: 0;
+        background: $white;
+        transform: skewY(-3deg);
+        transform-origin: 0;
+        z-index: 2;
+    }
+
+    & .shape-2 {
+        border: 1px solid #b4e4fb;
+        border-radius: 50%;
+        width: 1090px;
+        height: 1090px;
+        position: absolute;
+        z-index: -1;
+        left: -455px;
+        top: -490px;
+        z-index: -1;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            border: 1px solid #b4e4fb;
+            border-radius: 50%;
+            transform: scale(0.84);
+            z-index: -1;
+        }
+    }
+
+    & .shape-3 {
+        width: 68px;
+        height: 68px;
+        border: 5px solid #f8db5e;
+        border-radius: 50%;
+        position: absolute;
+        left: 150px;
+        top: 160px;
+        z-index: -1;
+        animation: zoom-inout 3s infinite;
+    }
+
+    & .shape-4 {
+        position: absolute;
+        right: 150px;
+        top: 170px;
+        z-index: -1;
+    }
+
+    & .single-counter {
+
+        & .counter-content {
+    
+            & .title {
+                color: #2f2a55;
+            }
+            & p {
+                color: #7a7a7a;
+            }
+        }
+    }
+}
+ 
+.upstudy-counter-section-03 {
+    @media #{$desktop-device}  {
+        padding-top: 170px;
+        padding-bottom: 100px;
+        & .shape-1 {
+            top: -45px;
+        }
+        & .shape-2 {
+            width: 950px;
+            height: 950px;
+            top: -410px;
+        }
+        & .shape-3 {
+            left: 45px;
+            top: 100px;
+        }
+        & .shape-4 {
+            right: 20px;
+            top: 60px;
+        }
+    }
+    @media #{$large-mobile}  {
+        padding-bottom: 80px;
+        & .shape-2 {
+            width: 850px;
+            height: 850px;
+        }
+    }
+    @media #{$small-mobile}  {
+        & .shape-4 {
+            top: 290px;
+        }
+    }
+    @media #{$extra-small-mobile}  {
+
+        & .shape-2 {
+            width: 760px;
+            height: 760px;
+        }
+    }
+}
+
+
+// About Page Style
+
+.upstudy-counter-section-04 {
+    background: #fdf8f4;
+    overflow: hidden;
+
+    & .counter-wrap {
+        position: relative;
+        z-index: 1;
+
+        & .shape-1 {
+            width: 68px;
+            height: 68px;
+            border: 5px solid #fbecb8;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: -5%;
+            z-index: -1;
+            animation: zoom-inout 3s infinite;
+        }
+
+        & .shape-2 {
+            position: absolute;
+            right: -6%;
+            top: 10%;
+            z-index: -1;
+        }
+
+    }
+
+    & .counter-content-wrap {
+        padding-top: 45px;
+    }
+    & .single-counter {
+        background: $white;
+        padding: 40px 65px 50px;
+        border-radius: 20px;
+        margin-top: 25px;
+
+        & .counter-icon {
+            
+            & img {
+                height: 35px;
+                transition: $transition-default;
+            }
+        }
+        & .counter-content {
+            margin-top: 20px;
+    
+            & .title {
+                color: $heading-color;
+            }
+            & p {
+                color: $heading-color;
+            }
+        }
+
+        &:hover {
+            & .counter-icon {
+            
+                & img {
+                    transform: rotateY(180deg);
+                }
+            }
+        }
+    }
+}
+
+.upstudy-counter-section-04 {
+    @media #{$desktop-device} {
+        & .single-counter {
+            padding: 40px 25px 50px;
+        }
+    }
+}

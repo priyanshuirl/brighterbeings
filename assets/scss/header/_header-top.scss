@@ -1,0 +1,164 @@
+/*--
+/*  2.1 - Header Top CSS
+/*----------------------------------------*/
+
+.header-top-section {
+    background: #0e2a47;
+    padding: 10px 0;
+    @media #{$large-mobile} {
+        display: none;
+    }
+
+    & .header-top-content {
+
+        & p {
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 400;
+            color: $white;
+
+            & span {
+                font-weight: 700;
+                color: $secondary;
+            }
+        }
+    }
+}
+
+// Home Style Four
+
+.header-section-02 {
+
+    & .header-top-section {
+        background: #ff5562;
+        overflow: hidden;
+        padding: 15px 0;
+        & .header-top-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            & .header-top-info {
+    
+                & ul {
+    
+                    & li {
+                        display: inline-block;
+                        position: relative;
+                        font-size: 12px;
+                        font-weight: 400;
+                        color: $white;
+
+                        & span {
+                            font-weight: 600;
+                            margin-left: 5px;
+                        }
+
+                        & i {
+                            font-size: 16px;
+                            margin-right: 5px;
+                        }
+
+                        & + li {
+                            padding-left: 30px;
+                            margin-left: 25px;
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                left: 0;
+                                top: 50%;
+                                background: #ff7781;
+                                transform: translateY(-50%);
+                                width: 1px;
+                                height: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            & .header-social {
+
+                & .social {
+    
+                    & li {
+                        display: inline-block;
+
+                        & + li {
+                            margin-left: 15px;
+                        }
+
+                        & a {
+                            height: 30px;
+                            width: 30px;
+                            line-height: 30px;
+                            text-align: center;
+                            background: #e54c58;
+                            border-radius: 50%;
+                            font-size: 15px;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Home Style Six
+
+.header-section-05 {
+
+    & .header-top-section {
+        background: #0e2a47;
+        & .header-top-wrap {
+
+            & .header-top-info {
+    
+                & ul {
+    
+                    & li {
+                        font-size: 14px;
+
+                        & i {
+                            font-size: 14px;
+                            margin-right: 5px;
+                        }
+
+                        & + li {
+                            padding-left: 0px;
+                            margin-left: 30px;
+                            &::before {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            & .header-social {
+
+                & .social {
+    
+                    & li {
+
+                        & + li {
+                            margin-left: 0px;
+                        }
+
+                        & a {
+                            background: transparent;
+                            font-size: 16px;
+                            color: $white;
+
+                            &:hover {
+                                color: $primary-2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

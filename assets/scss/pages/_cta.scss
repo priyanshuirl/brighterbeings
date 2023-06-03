@@ -1,0 +1,274 @@
+/*--
+/*  11 - CTA CSS
+/*----------------------------------------*/
+
+.upstudy-cta-section {
+    background: #eff5ff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 90px;
+
+    & .cta-image {
+        position: relative;
+        z-index: 1;
+
+        & .shape-1 {
+            position: absolute;
+            right: 50px;
+            top: -55px;
+            z-index: -1;
+        }
+
+        & .shape-2 {
+            position: absolute;
+            right: 0px;
+            top: 80px;
+            z-index: -1;
+        }
+    }
+
+    & .cta-content {
+        padding: 0 40px;
+
+        & .btn {
+            padding: 0 60px;
+            margin-top: 50px;
+        }
+    }
+}
+
+.upstudy-cta-section  {
+    @media #{$desktop-device} {
+        & .cta-image {
+    
+            & .shape-2 {
+                right: -25px;
+                top: 100px;
+            }
+        }
+    }
+}
+
+// Home Style Four
+
+.upstudy-cta-section-02 {
+    background: #ff5562;
+    padding-top: 110px;
+    padding-bottom: 170px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+    & .svg-shape {
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        width: 100%;
+    }
+
+    & .shape-1 {
+        position: absolute;
+        left: 85px;
+        top: 65px;
+        z-index: -1;
+    }
+
+    & .shape-2 {
+        position: absolute;
+        top: 50px;
+        right: 85px;
+        z-index: -1;
+    }
+
+    & .cta-content {
+
+        & .title {
+            font-size: 60px;
+            line-height: 70px;
+            font-weight: 600;
+            color: $white;
+        }
+
+        & p {
+            font-size: 24px;
+            line-height: 30px;
+            color: $white;
+        }
+    }
+
+    & .cta-btn {
+
+        & .btn {
+            height: 55px;
+            line-height: 53px;
+            border-radius: 35px;
+            background: $white;
+            padding: 0 45px;
+            color: #12283b;
+
+            &:hover {
+                background: #f8db5e;
+                color: $white;
+            }
+        }
+    }
+}
+
+.upstudy-cta-section-02  {
+    @media #{$desktop-device} {
+        padding-top: 90px;
+        padding-bottom: 150px;
+        & .cta-content {
+
+            & .title {
+                font-size: 48px;
+                line-height: 60px;
+            }
+
+        }
+
+        & .cta-btn {
+            margin-top: 40px;
+        }
+    }
+    @media #{$large-mobile} {
+        padding-top: 70px;
+        padding-bottom: 130px;
+        & .cta-content {
+
+            & .title {
+                font-size: 36px;
+                line-height: 48px;
+            }
+
+            & p {
+                font-size: 18px;
+            }
+
+        }
+    }
+}
+
+// Home Style Five
+  
+.upstudy-cta-section-03 {
+
+    & .cta-wrap {
+        background: #ffa300;
+        border-radius: 30px;
+        height: 450px;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        padding: 25px 80px 0;
+
+
+        & .shape-2 {
+            width: 315px;
+            height: 315px;
+            border: 50px solid #ffb533;
+            border-radius: 50%;
+            position: absolute;
+            top: -23%;
+            right: -5%;
+            z-index: -1;
+        }
+    }
+
+    & .cta-image {
+        position: relative;
+        z-index: 1;
+
+        & .shape-1 {
+            position: absolute;
+            left: 0;
+            top: 35px;
+            z-index: -1;
+        }
+
+        & .image {
+            text-align: center;
+        }
+    }
+
+    & .cta-content {
+        padding-top: 60px;
+
+        & .price {
+            font-size: 48px;
+            line-height: 1;
+            font-weight: 600;
+            color: #f6520a;
+
+            & span {
+                font-size: 24px;
+            }
+        }
+
+        & .title {
+            font-size: 36px;
+            line-height: 48px;
+            font-weight: 600;
+            color: $white;
+            margin-top: 20px;
+        }
+
+        & .btn {
+            padding: 0 35px;
+            border-radius: 35px;
+            background: $white;
+            color: #f6520a;
+            margin-top: 45px;
+
+            &:hover {
+                background: #f6520a;
+                color: $white;
+            }
+        }
+    }
+    
+}
+
+.upstudy-cta-section-03 {
+    @media #{$tablet-device} {
+        & .cta-wrap {
+            height: auto;
+            padding: 40px 80px 60px;
+
+            & .shape-2 {
+                top: 17%;
+            }
+        }
+    }
+    @media #{$large-mobile} {
+        & .cta-wrap {
+            height: auto;
+            padding: 40px 60px 60px;
+
+            & .shape-2 {
+                top: -17%;
+                right: -22%;
+            }
+        }
+
+        & .cta-content {
+    
+            & .price {
+                font-size: 45px;
+            }
+    
+            & .title {
+                font-size: 32px;
+                line-height: 44px;
+            }
+    
+        }
+    }
+    @media #{$extra-small-mobile} {
+        & .cta-wrap {
+            height: auto;
+            padding: 40px 30px 60px;
+        }
+    }
+}

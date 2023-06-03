@@ -1,0 +1,132 @@
+/*--
+/*  23 - Team Single CSS
+/*----------------------------------------*/
+ 
+.upstudy-team-profile-section {
+
+    & .team-profile {
+        background: $white;
+        box-shadow: 0px 0px 114px 0px rgba(0, 0, 0, 0.12);
+        border-radius: 10px;
+        padding: 20px;
+
+        & .profile-img {
+
+            & img {
+                width: 100%;
+                border-radius: 4px;
+            }
+        }
+
+        & .profile-content {
+            padding-top: 20px;
+            & .name {
+                font-size: 20px;
+                line-height: 24px;
+            }
+            & .designation {
+                font-size: 14px;
+                line-height: 24px;
+                color: #868686;
+            }
+
+            & .profile-social {
+                border-top: 1px solid #ebebeb;
+                padding-top: 25px;
+                margin-top: 15px;
+                margin-bottom: 20px;
+                & .title {
+                    font-size: 14px;
+                    line-height: 24px;
+                    margin-bottom: 10px;
+                }
+                & ul {
+
+                    & li {
+                        display: inline-block;
+                        & a {
+                            display: inline-block;
+                            font-size: 16px;
+                            height: 34px;
+                            width: 34px;
+                            line-height: 34px;
+                            border-radius: 50%;
+                            text-align: center;
+                            color: $white;
+
+                            &.facebook {
+                                background: #3452cf;
+                            }
+                            &.twitter {
+                                background: #39adf1;
+                            }
+                            &.pinterest {
+                                background: #d54443;
+                            }
+                        }
+
+                        & + li {
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    & .team-profile-description-wrap {
+        padding-left: 60px;
+        @media #{$desktop-device} {
+            padding-left: 0;
+            padding-top: 40px;
+        }
+        & .team-profile-info {
+            max-width: 415px;
+            & ul {
+
+                & .team-info {
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: $body-color;
+                    margin-top: 10px;
+                    padding-top: 10px;
+
+                    & + .team-info {
+                        border-top: 1px solid #ebebeb;
+                    }
+                    & .title {
+                        padding-right: 10px;
+                        display: inline-block;
+                        width: 115px;
+                    }
+
+                    & span {
+                        color: $heading-color;
+                        font-weight: 700;
+                    }
+
+                    & p {
+                        display: inline-block;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+
+        & .team-profile-description {
+            margin-top: 50px;
+            & .title {
+                font-size: 24px;
+                line-height: 42px;
+                margin-bottom: 15px;
+            }
+            & p {
+                font-size: 15px;
+                line-height: 30px;
+            }
+        }
+    }
+}
+
+ 
+  
