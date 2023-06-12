@@ -953,8 +953,21 @@ textarea:-ms-input-placeholder {
   justify-content: space-between;
 }
 
+#logo-image-navbar {
+  width: 200px !important;
+  position: relative;
+}
+
 .header-logo {
   flex-shrink: 0;
+}
+
+@media only screen and (min-width: 1199px) {
+  #logo-image-navbar {
+    width: 220px !important;
+    position: relative;
+    left: 20px;
+  }
 }
 
 @media only screen and (max-width: 1199px) {
