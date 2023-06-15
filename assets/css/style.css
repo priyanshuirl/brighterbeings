@@ -12015,3 +12015,11 @@ textarea:-ms-input-placeholder {
   font-weight: 500;
   margin: 0px 20px;
 }
+
+#preloader-logo {
+  width: 300px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
