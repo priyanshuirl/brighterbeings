@@ -153,22 +153,9 @@
  
 .upstudy-testimonial-section-02 {
     background: #fdf8f4;
-    padding-top: 460px;
     position: relative;
     overflow: hidden;
     z-index: 1;
-    @media #{$desktop-device}  {
-        padding-top: 430px;
-    }
-    @media #{$tablet-device}  {
-        padding-top: 370px;
-    }
-    @media #{$large-mobile}{
-        padding-top: 270px;
-    }
-    @media #{$extra-small-mobile} {
-        padding-top: 170px;
-    }
 
     & .shape-1 {
         width: 68px;

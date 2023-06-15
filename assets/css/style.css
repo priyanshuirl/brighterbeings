@@ -5628,34 +5628,9 @@ textarea:-ms-input-placeholder {
 
 .upstudy-testimonial-section-02 {
   background: #fdf8f4;
-  padding-top: 460px;
   position: relative;
   overflow: hidden;
   z-index: 1;
-}
-
-@media only screen and (max-width: 1199px) {
-  .upstudy-testimonial-section-02 {
-    padding-top: 430px;
-  }
-}
-
-@media only screen and (max-width: 991px) {
-  .upstudy-testimonial-section-02 {
-    padding-top: 370px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .upstudy-testimonial-section-02 {
-    padding-top: 270px;
-  }
-}
-
-@media only screen and (max-width: 449px) {
-  .upstudy-testimonial-section-02 {
-    padding-top: 170px;
-  }
 }
 
 .upstudy-testimonial-section-02 .shape-1 {
@@ -6174,16 +6149,14 @@ textarea:-ms-input-placeholder {
 }
 
 .upstudy-about-section .about-content .about-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   padding-top: 15px;
+  gap: 10px;
 }
 
 .upstudy-about-section .about-content .about-list .list-item {
   margin-top: 15px;
-}
-
-.upstudy-about-section .about-content .about-list .list-item:last-child {
-  padding-left: 30px;
 }
 
 .upstudy-about-section .about-content .about-list .list-item .title {
@@ -6266,7 +6239,7 @@ textarea:-ms-input-placeholder {
 
 @media only screen and (max-width: 449px) {
   .upstudy-about-section .about-content .about-list {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 10px;
   }
   .upstudy-about-section .about-content .about-list .list-item:last-child {
@@ -7385,6 +7358,10 @@ textarea:-ms-input-placeholder {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.upstudy-team-section {
+  margin-bottom: -50px !important;
 }
 
 .upstudy-team-section .our-team-wrap {
@@ -12028,4 +12005,13 @@ textarea:-ms-input-placeholder {
   opacity: 1;
   visibility: visible;
   transform: translateX(0);
+}
+
+.our-program-description {
+  position: relative;
+  top: 50px;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0px 20px;
 }
