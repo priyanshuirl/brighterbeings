@@ -5699,6 +5699,7 @@ textarea:-ms-input-placeholder {
   box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.09);
   border-radius: 20px;
   width: 525px;
+  aspect-ratio: 1/1;
   margin: 10px 80px;
   position: relative;
 }
@@ -5738,6 +5739,11 @@ textarea:-ms-input-placeholder {
 
 .single-testimonial-02 .testimonial-thumb img {
   border-radius: 50%;
+  width: 150px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: 0% 0%;
+  border: 5px solid #1cb098;
 }
 
 .single-testimonial-02 .testimonial-content {
@@ -10368,6 +10374,9 @@ textarea:-ms-input-placeholder {
 .sidebar-details-video-description .sidebar-video {
   position: relative;
   padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sidebar-details-video-description .sidebar-video .play {
@@ -12015,7 +12024,14 @@ textarea:-ms-input-placeholder {
   text-align: center;
   font-size: 1.6rem;
   font-weight: 500;
-  margin: 0px 20px;
+  width: 90%;
+  margin: auto;
+}
+
+@media all and (min-width: 800px) {
+  .our-program-description {
+    width: 60%;
+  }
 }
 
 #preloader-logo {
@@ -12046,6 +12062,32 @@ textarea:-ms-input-placeholder {
   color: #fff;
   padding: 16px;
   margin: 25px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1/1;
+}
+
+#display-chip {
+  position: fixed;
+  bottom: 0px;
+  right: 0;
+  font-size: 14px;
+  z-index: 99999;
+  height: 40px;
+  background-color: #0e2a47;
+  color: #fff;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 16px;
+  font-weight: 700;
+}
+
+#display-chip span {
+  color: #f8db5e;
 }
 
 .one {
@@ -12063,15 +12105,28 @@ textarea:-ms-input-placeholder {
 .text-animation-container p {
   font-size: 50px;
   line-height: 50px;
-  margin: 48px 0px;
   font-weight: 700;
   text-align: center;
 }
 
 @media all and (min-width: 800px) {
+  .text-animation {
+    flex-direction: row;
+    gap: 24px;
+  }
+  .text-animation-container p {
+    font-size: 36px;
+  }
   .text-animation-container {
-    padding: 24px 48px;
-    width: 80%;
+    width: 25%;
+    aspect-ratio: 1/1.3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0px 0px 0px;
+  }
+  #display-chip {
+    font-size: 18px;
   }
 }
 
