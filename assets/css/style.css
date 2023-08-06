@@ -349,8 +349,8 @@ img {
   font-size: 48px;
   line-height: 60px;
   font-family: "Outfit", sans-serif;
-  font-weight: 600;
-  color: #2f2a55;
+  font-weight: 700;
+  color: #2ab48c;
 }
 
 @media only screen and (max-width: 767px) {
@@ -362,9 +362,13 @@ img {
 
 @media only screen and (max-width: 449px) {
   .section-title .title {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 36px;
+    line-height: 60px;
   }
+}
+
+.footer-logo {
+  width: 250px;
 }
 
 .section-title .title span {
@@ -8147,7 +8151,7 @@ textarea:-ms-input-placeholder {
 /*  25 - Page Banner CSS
 /*----------------------------------------*/
 .page-banner-section {
-  padding-top: 90px;
+  padding-top: 120px;
   min-height: 500px;
   display: flex;
   align-items: center;
@@ -8194,9 +8198,13 @@ textarea:-ms-input-placeholder {
   }
   .page-banner-section .shape-1 {
     right: 11%;
+    top: 120px !important;
   }
   .page-banner-section .shape-2 img {
     width: 130px;
+  }
+  .page-banner-section .shape-3 {
+    top: 350px !important;
   }
 }
 
@@ -12069,6 +12077,17 @@ textarea:-ms-input-placeholder {
   aspect-ratio: 1/1.5;
 }
 
+.hero-title {
+  font-size: 32px !important;
+}
+
+@media screen and (min-width: 800px) {
+  .hero-title {
+    font-size: 60px !important;
+    line-height: 70px !important;
+  }
+}
+
 #display-chip {
   position: fixed;
   bottom: 0px;
@@ -12083,7 +12102,7 @@ textarea:-ms-input-placeholder {
   align-items: center;
   justify-content: center;
   border-top-left-radius: 16px;
-  font-weight: 700;
+  font-weight: 100;
 }
 
 #display-chip span {
@@ -12103,9 +12122,8 @@ textarea:-ms-input-placeholder {
 }
 
 .text-animation-container p {
-  font-size: 50px;
+  font-size: 36px;
   line-height: 50px;
-  font-weight: 700;
   text-align: center;
 }
 
@@ -12124,6 +12142,7 @@ textarea:-ms-input-placeholder {
     align-items: center;
     justify-content: center;
     margin: 25px 0px 0px 0px;
+    font-weight: 700;
   }
   #display-chip {
     font-size: 18px;
